@@ -23,6 +23,13 @@ body {
   z-index: 100;
 }
 
+/* COMMON CURSOR POINTER */
+
+.trending > div:nth-child(2) img,
+.img-logo {
+  cursor: pointer;
+}
+
 /* NAVBAR LOGO SECTION */
 
 .img-logo {
@@ -106,6 +113,7 @@ body {
 
 .advertisement picture {
   display: none;
+  cursor: pointer;
 }
 
 /* COMMON HEADING ----- STYLES */
@@ -279,10 +287,18 @@ body {
 
 .shop-apparel ul li img {
   width: 100%;
+  cursor: pointer;
 }
 
 .shop-at-skechers picture source {
   width: 100%;
+}
+
+/* MAINSECTION-----SHOP BY GENDER */
+
+.shop-by-gender-img {
+  border: 1px solid red;
+  cursor: auto !important;
 }
 
 /* MAINSECTION-----BOTTOM SECTION */
@@ -383,6 +399,7 @@ footer > div:nth-child(3) ul li i {
   font-size: 1.5rem;
   margin-right: 1rem;
   color: #0063ba;
+  cursor: pointer;
 }
 
 /* FOOTER-----THIRD CONTAINER */
