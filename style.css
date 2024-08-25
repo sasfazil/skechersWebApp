@@ -1,0 +1,630 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cfcfcf;
+  z-index: 100;
+}
+
+/* NAVBAR LOGO SECTION */
+
+.img-logo {
+  width: 15rem;
+  height: 100%;
+}
+
+/* NAVBAR NAVIGATING LINKS SECTION */
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar ul > li {
+  margin: 1.2rem;
+  cursor: pointer;
+  color: #434343;
+  display: none;
+  font-weight: 600;
+}
+
+/* NAVBAR SEARCH SECTION */
+
+.nav-bar > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  max-width: 18rem;
+}
+
+.nav-bar div div {
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 4px;
+}
+
+.nav-bar div div input {
+  flex-grow: 1;
+  width: 100%;
+  border-width: 0;
+  outline: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-bar div div:focus-within {
+  border-bottom: 1px solid #0063ba;
+}
+
+.nav-bar div > span {
+  margin-left: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-bar div span > span {
+  position: absolute;
+  bottom: 0.5rem;
+  right: -0.8rem;
+  background-color: #0063ba;
+  color: #ffffff;
+  border-radius: 1rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+.dropdown-img {
+  transform: rotateX(180deg);
+  margin-left: 1rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* MAIN SECTION-----FIRST SECTION */
+
+.advertisement picture {
+  display: none;
+}
+
+/* COMMON HEADING ----- STYLES */
+
+.main-headings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+.main-headings div {
+  border: 1px solid #dedede;
+  height: 0;
+  flex-grow: 1;
+}
+
+.main-headings p {
+  text-align: center;
+  padding: 0 2rem;
+  color: #434343;
+  font-size: 1.75rem;
+}
+
+/* MAINSECTION-----TRENDING TECHNOLOGY */
+
+.trending,
+.slip-ins,
+.whats-hot,
+.shop-apparel,
+.shop-by-gender,
+.shop-at-skechers,
+.bottom-section {
+  margin-top: 1rem;
+}
+
+.trending > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.trending > div:nth-child(2) img,
+.trending > div:nth-child(2) video {
+  width: 50%;
+  padding: 0.6rem;
+}
+
+/* COMMON MAINSECTION-----SLIP-INS----WHATSHOT */
+
+.slip-ins ul,
+.whats-hot ul,
+.shop-apparel ul,
+.shop-by-gender ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* MAINSECTION-----SLIP-INS */
+
+.slip-ins ul > li {
+  max-width: 270px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.slip-ins ul > li:hover {
+  box-shadow: 0 0 1rem #a29d9d;
+  cursor: pointer;
+}
+.slip-ins ul > li > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.slip-ins ul > li > div:nth-child(1) p {
+  color: #ffffff;
+  background-color: #0063ba;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.slip-ins ul li > div:nth-child(3) {
+  position: relative;
+  color: #434343;
+}
+
+.slip-ins ul li > div:nth-child(3) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.slip-ins ul li > div:nth-child(3) div > div {
+  position: absolute;
+  right: 0;
+  background-color: #f0f2f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+}
+
+.slip-ins ul li > div:nth-child(3) div > div p {
+  display: none;
+  font-size: 0.8rem;
+}
+
+.slip-ins ul li:hover div:nth-child(3) div > div p {
+  display: block;
+}
+
+.slip-ins ul li > div:nth-child(3) h4 {
+  width: 85%;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* MAINSECTION-----WHATSHOT */
+
+.whats-hot ul li {
+  margin: 1rem;
+  max-width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.whats-hot ul li img {
+  width: 100%;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.whats-hot ul li div {
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+}
+
+.whats-hot ul li div p {
+  color: #434343;
+  padding-right: 0.2rem;
+  text-decoration: none;
+  border-bottom: 1px solid #434343;
+}
+
+/* MAINSECTION-----SHOP APPAREL */
+
+.shop-apparel ul li {
+  margin: 10px;
+  width: 46%;
+}
+
+.shop-apparel ul li img {
+  width: 100%;
+}
+
+.shop-at-skechers picture source {
+  width: 100%;
+}
+
+/* MAINSECTION-----BOTTOM SECTION */
+
+.bottom-section {
+  color: #434343;
+  padding: 1rem 4rem;
+}
+
+.bottom-section h3 {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+}
+
+/* FOOTER-----FIRST CONTAINER */
+
+footer div:nth-child(1),
+footer div:nth-child(3) {
+  width: 90%;
+  margin: auto;
+  padding: 4rem 0 3rem 0;
+}
+
+footer div:nth-child(1) ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+footer div:nth-child(1) ul li {
+  padding: 0 10px;
+  border-right: 1px solid #434343;
+  height: 100%;
+  margin: 0.1rem 0;
+}
+
+footer div:nth-child(1) ul li a {
+  text-decoration: none;
+  color: #434343;
+
+  font-size: 0.9rem;
+}
+
+footer div:nth-child(1) ul li a:hover {
+  color: #0063ba;
+  text-decoration: underline;
+}
+
+/* FOOTER-----HR TAG */
+
+footer hr {
+  border: 1px solid #dedede;
+}
+
+/* FOOTER-----SECOND CONTAINER */
+
+footer > div:nth-child(3) {
+  display: none;
+}
+
+footer > div:nth-child(3) img {
+  width: 12rem;
+}
+
+footer > div:nth-child(3) ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+footer > div:nth-child(3) ul li h4 {
+  margin-bottom: 1rem;
+  color: #434343;
+}
+
+footer > div:nth-child(3) ul li p {
+  width: 100%;
+}
+
+footer > div:nth-child(3) ul li p {
+  margin-bottom: 0.5rem;
+}
+
+footer > div:nth-child(3) ul li p a {
+  text-decoration: none;
+  color: #757575;
+}
+
+footer > div:nth-child(3) ul li i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #0063ba;
+}
+
+/* FOOTER-----THIRD CONTAINER */
+
+footer > div:nth-child(4) details {
+  border-bottom: 1px solid #dedede;
+  padding: 1rem 0.5rem 1rem 1rem;
+}
+
+footer > div:nth-child(4) details summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer > div:nth-child(4) details div {
+  margin-top: 1.5rem;
+}
+
+footer > div:nth-child(4) details div p {
+  margin: 1rem;
+}
+
+footer > div:nth-child(4) details div p a {
+  text-decoration: none;
+  color: #434343;
+}
+
+footer > div:nth-child(4) > div {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+footer > div:nth-child(4) > div i {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #0063ba;
+  cursor: pointer;
+}
+/* FOOTER-----FORTH CONTAINER */
+
+footer > div:nth-child(5) {
+  border: 1px solid #dedede;
+  border-width: 1px 0px;
+  width: 100%;
+  height: 3rem;
+}
+
+/* FOOTER-----FIFTH CONTAINER */
+
+footer > div:nth-child(6) {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  color: #434343;
+}
+
+/* MEDIA QUIRES EXTRA SMALL SCREEN*/
+
+@media screen and (max-width: 576px) {
+  /* MEDIA NAVBAR LOGO SECTION */
+  .img-logo {
+    width: 10rem;
+  }
+
+  /* MEDIA NAVBAR SEARCH SECTION */
+
+  .nav-bar div div {
+    flex-grow: 0;
+  }
+
+  .nav-bar div div input {
+    display: none;
+  }
+
+  /* MEDIA MAIN SECTION-----FIRST SECTION */
+
+  .advertisement picture:nth-child(1) {
+    display: block;
+  }
+
+  /* MEDIA COMMON HEADING ----- STYLES */
+
+  .main-headings p {
+    font-size: 1 rem;
+  }
+
+  /* MEDIA MAINSECTION-----TRENDING TECHNOLOGY */
+
+  .trending > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .trending > div:nth-child(2) img,
+  .trending > div:nth-child(2) video {
+    width: 100%;
+  }
+
+  /* MEDIA MAINSECTION-----WHATSHOT */
+
+  .whats-hot ul li {
+    max-width: 350px;
+  }
+
+  /*MEDIA MAINSECTION-----SHOP APPAREL */
+
+  .shop-apparel ul li {
+    width: 90%;
+  }
+}
+
+/* MEDIA QUIRES SMALL SCREEN*/
+
+@media screen and (min-width: 576px) and (max-width: 769px) {
+  /* MEDIA NAVBAR LOGO SECTION */
+  .img-logo {
+    width: 11rem;
+  }
+
+  /* MEDIA NAVBAR SEARCH SECTION */
+
+  .nav-bar div div {
+    flex-grow: 0;
+  }
+
+  .nav-bar div div input {
+    display: none;
+  }
+
+  /* MEDIA MAIN SECTION-----FIRST SECTION */
+
+  .advertisement picture:nth-child(1) {
+    display: block;
+  }
+
+  /* MEDIA COMMON HEADING ----- STYLES */
+
+  .main-headings p {
+    font-size: 1 rem;
+  }
+
+  /* MEDIA MAINSECTION-----TRENDING TECHNOLOGY */
+
+  .trending > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .trending > div:nth-child(2) img,
+  .trending > div:nth-child(2) video {
+    width: 100%;
+  }
+}
+
+/* MEDIA QUIRES MEDIUM SCREEN*/
+
+@media screen and (min-width: 768.5px) and (max-width: 991.5px) {
+  /* MEDIA NAVBAR LOGO SECTION */
+  .img-logo {
+    width: 12rem;
+  }
+
+  /* MEDIA NAVBAR SEARCH SECTION */
+
+  .nav-bar div div {
+    flex-grow: 0;
+  }
+
+  .nav-bar div div input {
+    display: none;
+  }
+
+  /* MEDIA MAIN SECTION-----FIRST SECTION */
+
+  .advertisement picture:nth-child(2) {
+    display: block;
+  }
+}
+
+/* MEDIA QUIRES LARGE SCREEN*/
+
+@media screen and (min-width: 992px) and (max-width: 1199.5px) {
+  /* MEDIA NAVBAR LOGO SECTION */
+  .img-logo {
+    width: 14rem;
+  }
+
+  /* MEDIA NAVBAR SEARCH SECTION */
+
+  .nav-bar div div {
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  /* MEDIA MAIN SECTION-----FIRST SECTION */
+
+  .advertisement picture:nth-child(2) {
+    display: block;
+  }
+
+  /*MEDIA FOOTER-----THIRD CONTAINER */
+
+  footer > div:nth-child(3) {
+    display: block;
+  }
+
+  footer > div:nth-child(4) {
+    display: none;
+  }
+}
+
+/* MEDIA QUIRES EXTRA LARGE SCREEN*/
+
+@media screen and (min-width: 1200px) {
+  .nav-bar ul > li {
+    display: block;
+  }
+
+  /* MEDIA NAVBAR SEARCH SECTION */
+
+  .nav-bar div div {
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .dropdown-img {
+    display: none;
+  }
+
+  /* MEDIA MAIN SECTION-----FIRST SECTION */
+
+  .advertisement picture:nth-child(2) {
+    display: block;
+  }
+
+  /* FOOTER-----THIRD CONTAINER */
+
+  footer > div:nth-child(3) {
+    display: block;
+  }
+
+  footer > div:nth-child(4) {
+    display: none;
+  }
+}
